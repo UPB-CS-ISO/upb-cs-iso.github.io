@@ -5,7 +5,7 @@ layout: section
 *run an OS within an application*
 
 ---
----
+
 # The Idea
 *run an operating system within an application*
 
@@ -14,14 +14,14 @@ Why?
 - Run software that is not compatible with the OS your computer runs
 - Securely share a server
 
-Hypervisors
+Virtualization Software
 
-- VirtualBox
-- VMWare
-- QEMU
+- [VirtualBox](https://www.virtualbox.org/)
+- [VMWare](https://www.vmware.com/)
+- [QEMU](https://www.qemu.org/)
 
 ---
----
+
 # Simulation / Emulation
 simulate all the hardware - very slow
 
@@ -35,6 +35,7 @@ QEMU
 ---
 layout: two-cols
 ---
+
 # Virtualization
 use a part of the avalable hardware, emulates as if the system was running alone on the hardware
 
@@ -50,6 +51,8 @@ use a part of the avalable hardware, emulates as if the system was running alone
 - The guest OS has to be built for the same CPU architecture as the host OS
   - *Apple Silicon* is ARM64 (`aarch64`)
 
+> Make sure you download a Linux version for `arm64` or `aarch64`
+
 :: right ::
 
 ## Hypervisors
@@ -58,14 +61,20 @@ use a part of the avalable hardware, emulates as if the system was running alone
 
 VMWare
 
-TODO image
+<img src="./vmware.png" class="w-20">
+
+<br>
 
 VirtualBox
 
-TODO image
+<img src="./virtualbox.svg" class="w-20">
+
+<br>
 
 QEMU \
 via `hyper-v`, `KVM` or TODO macOS
+
+<img src="./qemu.png" class="w-30">
 
 </div>
 

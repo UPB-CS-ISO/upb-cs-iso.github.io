@@ -22,6 +22,7 @@
 - Irina Niță (CD)
 - Cristian Paris (CD)
 - Alexandra Văduva (CD)
+- Alexandru Radovici (CD)
 
 </div>
 </div>

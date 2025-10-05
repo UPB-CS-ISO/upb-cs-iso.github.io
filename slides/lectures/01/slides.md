@@ -31,18 +31,20 @@ to the *Internal Strcuture of Operating* class
 
 ## You will learn, understand and experiment
 
-- learn how operating systems work
-- understand how an embedded operating system works (Tock)
-- *understand how a new generation research oriented operating system works (Redox OS)*
-- understand how a production grade operating system works (Linux)
-- write code using the Linux and Tock architecture language that boots a computer
-- experiment with building your own small operating system
+- how operating systems work
+- how basic POSIX (Linux) commands work
+- how to use the Linux **command line**
+- the history of Linux
+- how use the development tools
 
 ## We expect
 - to come to class
 - ask a lot of questions
 
-<!-- Team -->
+<!--
+Team
+-->
+
 ---
 src: ./team.md
 ---
@@ -76,6 +78,13 @@ layout: section
 Albert Einstein
 
 ---
+---
+# Bibliography
+
+1. **Brian Ward**, *How LINUX Works*, 3<sup>rd</sup> Edition, No Starch Press, 2021
+2. **Razvan Deaconescu, Razbvan Rughinis, Mihai Carabas, Alexandru Radovici**, *Utilizarea Sistemelor de Operare*, Printech 2021, [download](https://github.com/systems-cs-pub-ro/carte-uso/releases/download/uso-ed1-2021/uso.pdf)
+
+---
 src: ../resources/os/slides.md
 ---
 
@@ -88,12 +97,12 @@ src: ../resources/distributions/slides.md
 ---
 
 ---
----
+
 # Conclusion
 we talked about
 
-- Types of OS kernel
-- Preemptive and cooperative kernel
-- Memory management and address space
-- Execution Contexts
-- Linux and Tock architecture
+- What is Operating System is
+- The Operating System Stack
+- Virtual Machines
+- History of Linux
+- Distributions

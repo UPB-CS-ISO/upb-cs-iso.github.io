@@ -5,7 +5,7 @@ layout: section
 what poeple think an OS is
 
 ---
----
+
 # UNIX
 
 <div grid="~ cols-2 gap-5">
@@ -22,7 +22,7 @@ what poeple think an OS is
 <div>
 Ken Thompson & Dennis Ritchie (Bell Labs, AT&T)
 
-TODO image
+<img src="./ritchie_thompson.jpg" class="w-90">
 
 - mainframes provide a lot of hardware
   - needs to be shared by several users
@@ -173,15 +173,6 @@ GNU Software on top of the Linux kernel
 - GNU Hurd 👷🚧🏗️ (*work in progress for many many years*)
 - The Linux kernel 🐧 still is the *temporary replacement*
 
-
----
----
-# Which is the most used Linux distribution?
-
-<v-click>
-TODO image
-</v-click>
-
 ---
 ---
 # Base Distributions
@@ -204,17 +195,28 @@ These are the base for most of the modern distributions that we have today.
 | | Name | Tagline | Parent | Package Format | Package Manager | Release Year |
 |-|-|-|-|-|-|-|
 | <img src="./opensuse.png" class="w-10"> | [SUSE Linux](https://www.suse.com) | *Enterprise-grade Linux* | *Originally Slackware, later RPM-based* | `rpm` | `zypper`, `yast` | 1994 |
-| | [ArchLinux](https://archlinux.org) | *Minimal Linux* | N/A | `pkg.tar.zst` | `pacman` | 2002 |
+| <img src="./arch.png" class="w-10"> | [ArchLinux](https://archlinux.org) | *Minimal Linux* | N/A | `pkg.tar.zst` | `pacman` | 2002 |
 | <img src="./fedora.png" class="w-10"> | [Fedora](https://www.redhat.com) | *Desktop Linux* | *Red Hat Linux renamed* | `rpm` | `dnf` / `rpm` | 2003 |
 | <img src="./ubuntu.png" class="w-10"> | [Ubuntu](https://www.ubuntu.org) | *Linux for Humans* | Debian | `deb` and `snap` | `apt` / `dpkg` and `snap` | 2004 |
 | <img src="./opensuse.png" class="w-10"> | [openSUSE](https://www.opensuse.org) | *Stable, usable Linux for everyone* | SUSE Linux | `rpm` | `zypper`, `rpm` | 2005 |
 
+
 ---
 ---
+# Which is the most used Linux distribution?
+
+<v-click>
+<div align="center">
+  <img src="./android.png" class="w-90">
+</div>
+</v-click>
+
+---
+
 # Non GNU Distributions
 They use Linux, but most of the software is not from GNU
 
 | | Distribution | Tagline | Parent | Package Format | Package Manager | Release Year |
 |-|-|-|-|-|-|-|
-| <img src="./slackware.png" class="w-10"> | [Android](https://source.android.com) | *Mobile Linux platform* | Linux kernel (AOSP) | `.apk` (only Android apps) | AOSP tools (not typical package manager) | 2008 |
+| <img src="./android.png" class="w-10"> | [Android](https://source.android.com) | *Mobile Linux platform* | Linux kernel (AOSP) | `.apk` (only Android apps) | AOSP tools (not typical package manager) | 2008 |
 | <img src="./chromeos.png" class="w-10"> | [ChromeOS](https://chromeos.google) | *The cloud-first OS* | Gentoo Linux | Custom (`.crx`, `.apk`, others) | `portage`, `cros_sdk`, Flatpak (via Crostini) | 2011 |
