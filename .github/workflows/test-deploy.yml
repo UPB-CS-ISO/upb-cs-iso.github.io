@@ -2,8 +2,6 @@ name: Test deployment
 
 on:
   pull_request:
-    branches:
-      - main
     # Review gh actions docs if you want to further define triggers, paths, etc
     # https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#on
   merge_group:
@@ -19,9 +17,25 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-          cache: npm
+          cache: "npm"
+          cache-dependency-path: |
+            website/package-lock.json
+            slides/package-lock.json
 
-      - name: Install dependencies
+      - name: Install dependencies (slides)
+        working-directory: slides
+        run: |
+          npx -y playwright@^1.41.2 install chromium
+          npm ci
+
+      - name: Build slides
+        working-directory: slides
+        run: SLIDES_OUTPUT_FOLDER=../website/static/slides ./build.sh
+
+      - name: Install dependencies (website)
+        working-directory: website
         run: npm ci
+
       - name: Test build website
+        working-directory: website
         run: npm run build
