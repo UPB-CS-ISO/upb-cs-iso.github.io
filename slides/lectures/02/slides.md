@@ -5,23 +5,23 @@ class: text-center
 highlighter: shiki
 lineNumbers: true
 info: |
-  ## Introduction to Operating Systems Internals
+  ## Introduction to Operating Systems
 drawings:
   persist: false
 defaults:
   foo: true
 transition: slide-left
-title: SISO - 01 - System Calls
+title: ISO - 02 - File System
 mdc: true
 layout: cover
 themeConfig:
-  primary: '#b51a00'
+  primary: '#004d65'
 download: true
-exportFilename: siso-02
+exportFilename: iso-02
 background:
 ---
 
-# System Calls
+# File System
 Lecture 2
 
 ---
@@ -29,48 +29,38 @@ Lecture 2
 # Bibliography
 for this section
 
-1. **Alexandru Radovici, Ioana Culic**, *Getting Started with Secure Embedded Systems*
-    - Chapter 3 - *The Tock system architecture*
-
-2. **Daniel P. Bovet, Marco Cesati**, *Understanding the LINUX KERNEL*
-    - Chapter 10 - *System Calls*
+1. **Brian Ward**, *How LINUX Works*, 3<sup>rd</sup> Edition, No Starch Press, 2021
+2. **Razvan Deaconescu, Razbvan Rughinis, Mihai Carabas, Alexandru Radovici**, *Utilizarea Sistemelor de Operare*, Printech 2021, [download](https://github.com/systems-cs-pub-ro/carte-uso/releases/download/uso-ed1-2021/uso.pdf)
 
 ---
 ---
 
-# System Calls
+# File System
 
-- What is a system call?
-- What is vDSO?
-- How a system call is performed?
-- Tock system calls
-- Linux system calls
-
-
+- What is the file system and why do we need it?
+- What is a file and what is a folder?
+- File Permissions
 
 ---
-src: ./os/slides.md
+layout: section
 ---
-
-# Questions
-
-- Can we avoid system calls in some places?
-- How many system call do we export?
-- How do we switch privilege modes?
-- How do we share data?
-- How do we report the result?
-- How do we make sure the application does not share wrong memory addresses?
+# *Best file compression around*
+## `DEL *.*` = *100% compression*
 
 ---
-src: ./vdso/slides.md
+src: ./filesystem/slides.md
 ---
 
 ---
-src: ./tock/slides.md
+src: ./files/slides.md
 ---
 
 ---
-src: ./linux/slides.md
+src: ./navigation/slides.md
+---
+
+---
+src: ./permissions/slides.md
 ---
 
 ---
@@ -78,8 +68,11 @@ src: ./linux/slides.md
 # Conclusion
 we talked about
 
-- What is a system call?
-- What is vDSO?
-- How a system call is performed?
-- Tock system calls
-- Linux system calls
+- Disk Drive
+- Blocks of data
+- Partition
+- Formatting
+- File Systems
+- File Management
+- Navigation
+- File Permissions
