@@ -5,12 +5,24 @@ layout: section
 `pwd`, `cd` and `ls`
 
 ---
+
+# Bibliography
+for this section
+
+1. **Brian Ward**, *How LINUX Works*, 3<sup>rd</sup> Edition, No Starch Press, 2021
+    - Chapter 2 - *Basic Commands and Directory Hierarchy*
+      - Section 2.4
+2. **Razvan Deaconescu, Razbvan Rughinis, Mihai Carabas, Alexandru Radovici**, *Utilizarea Sistemelor de Operare*, Printech 2021, [download](https://github.com/systems-cs-pub-ro/carte-uso/releases/download/uso-ed1-2021/uso.pdf)
+    - Chapter 2 - *Utilizarea sistemului de fișiere*
+      - Sections 2.1
+
 ---
+
 # `man`
 📖 Manual Pages
 
 ```bash
-$ man ls
+$ man pwd
 ```
 
 <v-click>
@@ -119,6 +131,18 @@ layout: section
 ---
 # File Management
 `mkdir`, `cp`, `mv`, `rmdir` and `rm`
+
+---
+
+# Bibliography
+for this section
+
+1. **Brian Ward**, *How LINUX Works*, 3<sup>rd</sup> Edition, No Starch Press, 2021
+    - Chapter 2 - *Basic Commands and Directory Hierarchy*
+      - Section 2.3
+2. **Razvan Deaconescu, Razbvan Rughinis, Mihai Carabas, Alexandru Radovici**, *Utilizarea Sistemelor de Operare*, Printech 2021, [download](https://github.com/systems-cs-pub-ro/carte-uso/releases/download/uso-ed1-2021/uso.pdf)
+    - Chapter 2 - *Utilizarea sistemului de fișiere*
+      - Sections 2.3
 
 ---
 ---

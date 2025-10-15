@@ -5,6 +5,19 @@ layout: section
 
 ---
 
+# Bibliography
+for this section
+
+1. **Brian Ward**, *How LINUX Works*, 3<sup>rd</sup> Edition, No Starch Press, 2021
+    - Chapter 2 - *Basic Commands and Directory Hierarchy*
+      - Section 2.19
+
+2. **Razvan Deaconescu, Razbvan Rughinis, Mihai Carabas, Alexandru Radovici**, *Utilizarea Sistemelor de Operare*, Printech 2021, [download](https://github.com/systems-cs-pub-ro/carte-uso/releases/download/uso-ed1-2021/uso.pdf)
+    - Chapter 2 - *Utilizarea sistemului de fișiere*
+      - Sections 2.1
+
+---
+
 # Windows Filesystem Layout
 
 - Hierarchical structure starting from **drive letters** (`C:\`, `D:\`, etc.)
@@ -71,6 +84,18 @@ layout: section
 absolute and relative
 
 ---
+
+# Bibliography
+for this section
+
+1. **Brian Ward**, *How LINUX Works*, 3<sup>rd</sup> Edition, No Starch Press, 2021
+    - Chapter 2 - *Basic Commands and Directory Hierarchy*
+      - Section 2.4
+2. **Razvan Deaconescu, Razbvan Rughinis, Mihai Carabas, Alexandru Radovici**, *Utilizarea Sistemelor de Operare*, Printech 2021, [download](https://github.com/systems-cs-pub-ro/carte-uso/releases/download/uso-ed1-2021/uso.pdf)
+    - Chapter 2 - *Utilizarea sistemului de fișiere*
+      - Sections 2.1
+
+---
 ---
 # What Is a Path?
 
@@ -123,7 +148,7 @@ Always start from the **root directory /**
 </div>
 
 ---
----
+
 # Relative Path
 to the current directory
 
@@ -138,7 +163,7 @@ to the current directory
 
 ### <img src="./windows.jpg" style="float: left;" class="w-10 rounded"> Windows
 
-Always start from a **drive letter**
+Does **NOT** start from a **drive letter**
 
 ```cmd
 # If you're in C:\Users\Alice
@@ -151,7 +176,7 @@ Documents\report.docx
 
 ### <img src="./linux.png" style="float: left;" class="w-7 rounded"> Linux (POSIX)
 
-Always start from the **root directory /**
+Does **NOT** start from the **root directory /**
 
 ```bash
 # If you're in /home/alice

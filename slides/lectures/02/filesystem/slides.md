@@ -4,8 +4,13 @@ layout: section
 # What is a file system?
 
 ---
----
+
 # Bibliography
+for this section
+
+1. **Brian Ward**, *How LINUX Works*, 3<sup>rd</sup> Edition, No Starch Press, 2021
+    - Chapter 4 - *Disks and Filesystems*
+      - Sections 4.1 and 4.2
 
 ---
 ---

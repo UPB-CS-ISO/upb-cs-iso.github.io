@@ -25,12 +25,18 @@ background:
 Lecture 2
 
 ---
----
+
 # Bibliography
-for this section
 
 1. **Brian Ward**, *How LINUX Works*, 3<sup>rd</sup> Edition, No Starch Press, 2021
+    - Chapter 2 - *Basic Commands and Directory Hierarchy*
+    - Chapter 4 - *Disks and Filesystems*
+      - Sections 4.1 and 4.2
 2. **Razvan Deaconescu, Razbvan Rughinis, Mihai Carabas, Alexandru Radovici**, *Utilizarea Sistemelor de Operare*, Printech 2021, [download](https://github.com/systems-cs-pub-ro/carte-uso/releases/download/uso-ed1-2021/uso.pdf)
+    - Chapter 2 - *Utilizarea sistemului de fișiere*
+      - Sections 2.1 - 2.3
+    - Chapter 5 - *Utilizatori*
+      - Sections 5.5
 
 ---
 ---
