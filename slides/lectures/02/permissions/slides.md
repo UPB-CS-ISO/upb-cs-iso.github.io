@@ -32,6 +32,107 @@ Linux treats everything as a **file**, but there are several types:
 | `p` | 🚇 **Named pipe (FIFO)** | Used for inter-process communication | Custom IPC files |
 | `s` | 🌐 **Socket** | Used for network or inter-process communication | `/run/docker.sock` |
 
+---
+---
+# iNode
+file information node
+
+<v-switch>
+
+<template #0>
+
+<center>
+<img src="./inode.svg" class="w-170 rounded">
+</center>
+
+</template>
+
+<template #1>
+
+<center>
+
+## 🤔💭 What is missing?
+
+<br>
+
+<img src="./inode.svg" class="w-140 rounded">
+</center>
+
+</template>
+
+</v-switch>
+
+---
+---
+# Folder Data
+where the file name is stored
+
+- ***links** iNodes to file names*
+- `.` and `..` are always present
+- the folder is a *file who's contents is read by the file system driver*
+
+<center>
+<img src="./folder_data.svg" class="w-170 rounded">
+</center>
+
+---
+---
+# How Symbolic and Hard Links Work
+
+<div grid="~ cols-2 gap-5">
+
+<div>
+
+### 🔗 Symbolic Link
+
+```bash {*}{lines: false}
+ln -s link.txt original.txt
+```
+
+```bash {*}{lines: false}
+$ ls -l -i
+154736548 lrwxr-xr-x   1 ...  link.txt -> original.txt
+154736507 -rw-r--r--   1 ...  original.txt
+```
+
+``` {*}{lines: false}
+📂 /home/user/
+├── 📄 original.txt
+└── 🔗 link.txt  ➜  points to /home/user/original.txt
+```
+
+- `link.txt` stores the **path** to the target.
+- If `original.txt` is deleted ❌ → the link breaks.
+
+</div>
+
+<div>
+
+### ⚓ Hard Link
+
+```bash {*}{lines: false}
+ln link.txt original.txt
+```
+
+```bash {*}{lines: false}
+$ ls -l -i
+154736507 -rw-r--r--   2 ... link.txt
+154736507 -rw-r--r--   2 ... original.txt
+```
+
+``` {*}{lines: false}
+📂 /home/user/
+├── 📄 original.txt  (inode #1234)
+└── 📄 link.txt      (inode #1234)
+```
+
+- Both files share the **same inode number**.
+- If `original.txt` is deleted 🗑️ → `link.txt` still accesses the same data.
+- The data is only deleted when **all hard links** are removed.
+
+</div>
+
+</div>
 
 ---
 ---

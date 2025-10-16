@@ -82,3 +82,5 @@ we talked about
 - File Management
 - Navigation
 - File Permissions
+- iNode
+- Folder Data
