@@ -59,7 +59,7 @@ from *file* to a *process*
 </div>
 
 ---
----
+
 # Creating a Process
 forking a parent and loading an executable
 
@@ -75,7 +75,7 @@ from now on we have two identical processes
 
 </v-clicks>
 
-**Parent**
+**Child**
 
 <v-clicks>
 
@@ -84,7 +84,7 @@ from now on we have two identical processes
 
 </v-clicks>
 
-**Child**
+**Parent**
 
 <v-clicks>
 
