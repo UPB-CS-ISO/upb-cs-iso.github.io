@@ -5,19 +5,19 @@ class: text-center
 highlighter: shiki
 lineNumbers: true
 info: |
-  ## Introduction to Operating Systems Internals
+  ## Introduction to Operating Systems
 drawings:
   persist: false
 defaults:
   foo: true
 transition: slide-left
-title: SISO - 03 - Processes
+title: ISO - 03 - Processes
 mdc: true
 layout: cover
 themeConfig:
-  primary: '#b51a00'
+  primary: '#004d65'
 download: true
-exportFilename: siso-03
+exportFilename: iso-03
 background:
 ---
 
@@ -26,45 +26,45 @@ Lecture 3
 
 ---
 ---
-# Processes
-
-- Process and threads
-- Context switching
-- Blocking and waking up
-- Process context
+# Bibliography
 
 ---
+layout: two-cols
 ---
-# Process
-groups together resources
+# Operating System
+abstractions
 
-- An address space
-- One or more threads
-- Opened files
-- Sockets
-- Semaphores
-- Shared memory regions
-- Timers
-- Signal handlers
+<style>
+.two-columns {
+    grid-template-columns: 2fr 3fr;
+}
+</style>
 
-Many other resources and status information, all stored in the **Process Control Block** (*PCB*)
+**Actions**
+- *Applications*
+- use the *Processor* and *Accelerators* (GPU, Neural Engine, etc)
+
+**Data**
+- everything is a file
+- peripherals are viewed as files (*POSIX*)
+  - `/dev/input/keyboard` - keyboard
+  - `/dev/fb` - screen (framebuffer)
+  - `/dev/sda` - Disk Drive A (first)
+
+:: right ::
+
+<img src="./abstractions.svg" class="w-120 rounded" />
 
 ---
----
-# Threads
-
-A thread is the basic unit that the kernel process scheduler uses to allow applications to run the CPU. A thread has the following characteristics:
-
-- Each thread has its own stack and together with the register values it determines the thread execution state
-- A thread runs in the context of a process and all threads in the same process share the resources
-- The kernel schedules threads not processes and user-level threads (e.g. fibers, coroutines, etc.) are not visible at the kernel level
-
----
-src: ./tock.md
+src: ./process/slides.md
 ---
 
 ---
-src: ./linux.md
+src: ./fd/slides.md
+---
+
+---
+src: ./shell/slides.md
 ---
 
 ---
