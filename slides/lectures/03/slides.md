@@ -63,16 +63,18 @@ src: ./process/slides.md
 src: ./fd/slides.md
 ---
 
----
+<!-----
 src: ./shell/slides.md
----
+----->
 
 ---
 ---
 # Conclusion
 we talked about
 
-- Process and threads
-- Context switching
-- Blocking and waking up
-- Process context
+- Process
+- PID
+- Process Loading
+- Process States
+- `fork` and `exec`
+- How Linux starts
