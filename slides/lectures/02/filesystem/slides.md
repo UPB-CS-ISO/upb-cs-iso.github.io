@@ -91,7 +91,7 @@ each operating system has *its own filesystem*
 [^userspace]: **F**ile **S**ystem in **Us**erspace - driver that allows writing of FS as normal applications
 
 ---
----
+
 # Partitions
 allow multiple file systems on the same disk drive
 
@@ -107,9 +107,10 @@ allow multiple file systems on the same disk drive
 
 Two partitioning systems
 - Master Boot Record - `MBR`
-  - legacy
+  - legacy (`BIOS`)
   - ⚠️ 4 paritions / 2 TB
 - **GUID Partition Table** - `GPT`
+  - modern (`UEFI`)
 
 </v-click>
 
