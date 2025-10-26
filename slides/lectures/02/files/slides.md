@@ -160,7 +160,8 @@ Always start from the **root directory /**
 to the current directory
 
 - ✅ Shorter
-- ⚠️ Depends on where you are
+- ⚠️ Depends on the current folder (*where you are*)
+- 📦 allows application's to find its own files, regardless of where they are installed (`./textures`)
 
 <br>
 
@@ -198,8 +199,7 @@ Documents/report.txt
 
 ### 🤔 Just think a real world address of a person *relative to your own current location*:
 `🧍-> 📁 Street -> 📁 Street Number -> 📄 person`
-- you know the `📁 Country` in which you are now
-- you know the `📁 City` in which you are now
+- in the example, you already know the `📁 Country` and the `📁 City` in which you are now
 
 </v-click>
 
