@@ -34,7 +34,7 @@ how do processes get the file descriptors
 
 - processes inherit (almost) all file descriptors from the parent process due to `fork`
 - in between `fork` and `exec`, developers might change some of the file descriptors
-  - redirection to and from files (`<`, `>`, `2>`)
+  - redirection to and from files (`<`, `>`, `2>`, `&>`)
   - pipes (`|`)
   - close some files
 
@@ -71,7 +71,7 @@ sort < unsorted.txt > sorted.txt    # Sort contents of unsorted.txt into sorted.
 # Advanced Redirects
 trick processes about the keyboard, display and error display
 
-```bash {none|1,2|4,5|7-11}
+```bash {none|1,2|4,5|7-11|all}
 # Suppress all output (stdout and stderr)
 command > /dev/null 2>&1            # Run silently; discard all output and errors
 

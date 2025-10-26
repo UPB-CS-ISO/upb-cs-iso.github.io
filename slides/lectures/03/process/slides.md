@@ -11,7 +11,7 @@ layout: section
 📁 one executable file ➡️ multiple processes ⚙️⚙️...⚙️
 
 <center>
-<img src="./exe_to_process.png" class="w-170 rounded" style="background-color: white; padding: 5px;">
+<img src="./program-proc.svg" class="w-170 rounded" style="background-color: white; padding: 5px;">
 </center>
 
 ---
@@ -19,7 +19,7 @@ layout: section
 # Loading an Executable
 from *file* to a *process*
 
-<img src="./process_loading.png">
+<img src="./loader-actions.svg" class="rounded" style="background-color: white; padding: 5px;">
 
 <img src="./os_stack.svg" class="w-70 absolute top-10 left-140 rounded" style="border: 1px dotted; padding: 5px;">
 
@@ -252,7 +252,7 @@ or the whole system will panic!
 the process from start to finish
 
 <center>
-<img src="./process_states.png" class="w-170 rounded" style="background-color: white; padding: 5px;">
+<img src="./process-states.svg" class="w-170 rounded" style="background-color: white; padding: 5px;">
 </center>
 
 ---
@@ -310,13 +310,13 @@ and this is why init cannot stop
 
 <v-clicks>
 
-- the process will stay in `Done` / `Terminated` and will **wait for the parent** to *read its return code* (`wait`)
-- the system will **keep all the processe's resources allocated** while in `Done`/`Terminated`
+- the process will stay in `Done` and will **wait for the parent** to *read its return code* (`wait`)
+- the system will **keep all the processe's resources allocated** while in `Done`
 
 </v-clicks>
 
 <center>
-<img src="./process_states.png" class="w-120 rounded" style="background-color: white; padding: 5px;">
+<img src="./process-states.svg" class="w-120 rounded" style="background-color: white; padding: 5px;">
 </center>
 
 <v-click>

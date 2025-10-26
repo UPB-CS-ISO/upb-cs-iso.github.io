@@ -28,6 +28,14 @@ Lecture 3
 ---
 # Bibliography
 
+1. **Brian Ward**, *How LINUX Works*, 3<sup>rd</sup> Edition, No Starch Press, 2021
+    - Chapter 6 - *How User space Starts*
+      - Sections 6.1 - 6.6
+    - Chapter 8 - *A Closer Look at Processes and Resources*
+      - Sections 8.1 - 8.3
+2. **Razvan Deaconescu, Razbvan Rughinis, Mihai Carabas, Alexandru Radovici**, *Utilizarea Sistemelor de Operare*, Printech 2021, [download](https://github.com/systems-cs-pub-ro/carte-uso/releases/download/uso-ed1-2021/uso.pdf)
+    - Capitolul 6 - *Procese*
+
 ---
 layout: two-cols
 ---
@@ -63,9 +71,9 @@ src: ./process/slides.md
 src: ./fd/slides.md
 ---
 
-<!-----
-src: ./shell/slides.md
------>
+---
+src: ./signals/slides.md
+---
 
 ---
 ---
