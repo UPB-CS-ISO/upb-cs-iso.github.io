@@ -58,7 +58,7 @@ layout: section
 always read the manual **before using AI and searching online** for commands that you want to use
 
 ---
----
+
 # `pwd`
 📍 Print Working Directory
 
@@ -73,9 +73,17 @@ pwd
 ### Example
 
 ```bash
-$ pwd
+[alice@computer: ~/Documents] $ pwd
 /home/alice/Documents
 ```
+
+<br>
+
+<v-click>
+
+### 🤔 mind the prompt `[alice@computer: ~/Documents] $`
+
+</v-click>
 
 ---
 
@@ -94,12 +102,17 @@ cd [directory]
 
 ### Examples
 
-```bash
-$ cd /home/alice/Downloads   # absolute path
-$ cd ../Documents            # relative path (up one level then into Documents)
-$ cd ~                       # go to home directory
-$ cd                         # go to home directory (no directory parameter)
+```bash {none|1|1-2|1-3|1-4|1-5|all}
+[alice@computer: /home] $ cd /home/alice/Downloads   # absolute path
+[alice@computer: ~/Downloads] $ cd ../Documents      # relative path (up one level then into Documents)
+[alice@computer: ~] $ cd ~                           # go to home directory
+[alice@computer: ~] $ cd                             # go to home directory (no directory parameter)
+[alice@computer: ~] $                          
 ```
+
+<v-click>
+⚠️ `~` means `/home/Alice`
+</v-click>
 
 ---
 
@@ -114,7 +127,7 @@ ls [options] [directory]
 
 ### Example
 
-```rust
+```rust {none|1-2|3-5|all}
 $ ls
 Documents  Downloads  Pictures
 $ ls -l
