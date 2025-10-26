@@ -45,7 +45,7 @@ C:\
 
 <img src="./linux_fs.png" style="background: white; padding: 5px" class="rounded">
 
-⚠️ no drive letters, **on single root**
+⚠️ no drive letters, **one single root**
 
 ---
 
