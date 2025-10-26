@@ -147,6 +147,13 @@ Always start from the **root directory /**
 
 </div>
 
+<v-click>
+
+### 🤔 Just think a real world address of a person. You need:
+`🗄️ Country -> 📁 County -> 📁 City -> 📁 Street -> 📁 Street Number -> 📄 person`
+
+</v-click>
+
 ---
 
 # Relative Path
@@ -187,6 +194,15 @@ Documents/report.txt
 
 </div>
 
+<v-click>
+
+### 🤔 Just think a real world address of a person *relative to your own current location*:
+`🧍-> 📁 Street -> 📁 Street Number -> 📄 person`
+- you know the `📁 Country` in which you are now
+- you know the `📁 City` in which you are now
+
+</v-click>
+
 ---
 
 # Special Path Symbols in Windows and Linux (POSIX)
@@ -202,7 +218,8 @@ Documents/report.txt
 
 </v-clicks>
 
-⚠️ `\` in POSIX systems is used for esacping characters
+⚠️ `\` in POSIX systems is used for esacping characters\
+⚠️ `~` in `bash`-like (`..sh`) command interpretors is used for the *user's home folder*
 
 ---
 ---
