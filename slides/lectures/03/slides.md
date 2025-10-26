@@ -37,6 +37,18 @@ Lecture 3
     - Capitolul 6 - *Procese*
 
 ---
+---
+# Processes
+
+- Process
+- PID
+- Process Loading
+- Process States
+- `fork` and `exec`
+- How signals work
+- How Linux starts
+
+---
 layout: two-cols
 ---
 # Operating System
