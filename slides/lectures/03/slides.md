@@ -85,4 +85,5 @@ we talked about
 - Process Loading
 - Process States
 - `fork` and `exec`
+- How signals work
 - How Linux starts
