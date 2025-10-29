@@ -5,49 +5,52 @@ class: text-center
 highlighter: shiki
 lineNumbers: true
 info: |
-  ## Introduction to Operating Systems Internals
+  ## Introduction to Operating Systems
 drawings:
   persist: false
 defaults:
   foo: true
 transition: slide-left
-title: SISO - 05 - SMP
+title: ISO - 05 - Command Line Interface
 mdc: true
 layout: cover
 themeConfig:
-  primary: '#b51a00'
+  primary: '#004d65'
 download: true
-exportFilename: siso-05
+exportFilename: iso-05
 background:
 ---
 
-# Symmetric Multi Processing
+# Command Line Interface
 Lecture 5
 
 ---
+layout: section
 ---
-# Processes
-
-- Process and threads
-- Context switching
-- Blocking and waking up
-- Process context
+# *It was a mistake to think that GUIs ever would, could, or even should, eliminate CLIs.*
+Jeffrey Snover (Architect of Windows PowerShell)
 
 ---
-src: ./queue_spin_lock.md
+---
+# Command Line Interface
+
+- Shell & Terminal
+- Foreground & Background
+- Text Processing Commands
+
+---
+src: ./shell/slides.md
 ---
 
 ---
-src: ./mesi.md
+src: ./text_processing/slides.md
 ---
-
 
 ---
 ---
 # Conclusion
 we talked about
 
-- Process and threads
-- Context switching
-- Blocking and waking up
-- Process context
+- Shell & Terminal
+- Foreground & Background
+- Text Processing Commands

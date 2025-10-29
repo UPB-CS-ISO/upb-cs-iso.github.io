@@ -70,7 +70,7 @@ pub trait Process {
     /// Returns the number of pending tasks.
     fn pending_tasks(&self) -> usize;
 
-    /// Queue a [`Task`] for the process. This will be added to a per-process buffer and executed by the 
+    /// Queue a [`Task`] for the process. This will be added to a per-process buffer and executed by the
     // scheduler. [`Task`]s are some function the process should run, for example a upcall or an IPC call.
     fn enqueue_task(&self, task: Task) -> Result<(), ErrorCode>;
 
@@ -134,7 +134,7 @@ pub trait Process {
     fn update_stack_start_pointer(&self, stack_pointer: *const u8);
     fn update_heap_start_pointer(&self, heap_pointer: *const u8);
 
-    fn build_readwrite_process_buffer(&self, 
+    fn build_readwrite_process_buffer(&self,
         buf_start_addr: *mut u8, size: usize,
     ) -> Result<ReadWriteProcessBuffer, ErrorCode>;
     fn build_readonly_process_buffer(&self,
@@ -184,7 +184,7 @@ pub trait Process {
     fn allocate_grant(&self, grant_num: usize, driver_num: usize, size: usize, align: usize) -> Result<(), ()>;
     fn grant_is_allocated(&self, grant_num: usize) -> Option<bool>;
 
-    fn allocate_custom_grant(&self, 
+    fn allocate_custom_grant(&self,
         size: usize, align: usize
     ) -> Result<(ProcessCustomGrantIdentifier, NonNull<u8>), ()>;
 
@@ -305,13 +305,13 @@ pub struct ProcessStandard<'a, C: 'static + Chip, D: 'static + ProcessStandardDe
 
     kernel: &'static Kernel,
     chip: &'static C,
-    
+
     fault_policy: &'a dyn ProcessFaultPolicy,
     storage_permissions: StoragePermissions,
     mpu_config: MapCell<<<C as Chip>::MPU as MPU>::MpuConfig>,
     mpu_regions: [Cell<Option<mpu::Region>>; 6],
 
-    
+
 
     restart_count: Cell<usize>,
     completion_code: OptionalCell<Option<u32>>,
