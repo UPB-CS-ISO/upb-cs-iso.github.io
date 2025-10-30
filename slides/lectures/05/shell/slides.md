@@ -280,7 +280,7 @@ the terminal and shell define this
 </center>
 
 ---
----
+
 # Make a Job
 a background process
 
@@ -292,7 +292,7 @@ a background process
   - ⚠️ make sure you redirect the output as it might write to the same terminal
 - press `CTRL`+`Z` (sends `SIGTSTP` - 🙄 process might ignore it)
 - find the job `ID` (`$ jobs`)
-- run `$ bg ID`
+- run `$ bg %ID`
 - run `$ jobs` to verify if it still runs
 
 </v-clicks>
@@ -301,6 +301,6 @@ a background process
 
 ## Bring it back in foreground
 
-- run `$ fg ID`
+- run `$ fg %ID`
 
 </v-click>
